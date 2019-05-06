@@ -1,3 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
 .heading-text {
     font-family: 'Cinzel Decorative', cursive;
+    padding-top: 30vh;
 }
+
+header{
+    background: url(../img/GOT.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+  }
+
+  .overlay{
+    background-color: #2C302F;
+    background-size: cover;
+    opacity: .90;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+  }
