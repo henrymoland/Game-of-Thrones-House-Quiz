@@ -2,9 +2,15 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .heading-text {
     font-family: 'Cinzel Decorative', cursive;
-    padding-top: 30vh;
+    padding-top: 20vh;
+    margin-left: 5rem;
+    font-size: 2.5rem;;
 }
 
 header{
@@ -23,3 +29,10 @@ header{
     height: 80vh;
     position: relative;
   }
+
+@media (max-width: 600px) {
+  .heading-text {
+    font-size: 2rem;
+  };
+}
+

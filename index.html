@@ -16,100 +16,193 @@
     <header>
         <div class="overlay">
             <div class="container">
-                <h2 class=" display-3 text-white heading-text">Which Game of Thrones House Do You Belong To?</h2>
+                <h2 class="text-white heading-text">Test your knowledge of Game of Thrones</h2> 
+                <div class="text-center my-5">
+                    <a href="#quiz">
+                        <button type="button" class="btn btn-light btn-lg">Take Quiz</button>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- body -->
-
-    <div class="quiz py-4 bg-dark">
-        <div class="container">
-            <h2 class="my-5 text-white">On With the questions...</h2>
-            <form class="quiz-form text-light">
-                <div class="my-5">
-                    <p class="lead font-weight-normal"> 1. Your friend is being bullied and you are witnessing it, do you...</p>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q1" value="A" checked>
-                        <label class="form-check-label">Reason with the bully</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q1" value="B">
-                        <label class="form-check-label">Step in and fight the bully</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q1" value="C">
-                        <label class="form-check-label">Do nothing</label>
-                    </div>
-                </div>
-                <div class="my-5">
-                    <p class="lead font-weight-normal"> 2. Choose your weapon</p>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q2" value="A" checked>
-                        <label class="form-check-label">A book...to throw</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q2" value="B">
-                        <label class="form-check-label">Rather fight with fists</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q2" value="C">
-                        <label class="form-check-label">Your mind</label>
-                    </div>
-                </div>
-                <div class="my-5">
-                    <p class="lead font-weight-normal"> 3. How important is Money?</p>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q3" value="A" checked>
-                        <label class="form-check-label">Money can't make happiness</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q3" value="B">
-                        <label class="form-check-label">Money is good to have but is not the most important thing in life</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q3" value="C">
-                        <label class="form-check-label">Money is absolutely important and can solve all problems</label>
-                    </div>
-                </div>
-                <div class="my-5">
-                    <p class="lead font-weight-normal"> 4. What do you value most in an ally?</p>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q4" value="A" checked>
-                        <label class="form-check-label">Wealth</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q4" value="B">
-                        <label class="form-check-label">Loyalty</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                            <input type="radio" name="q4" value="C">
-                            <label class="form-check-label">Bravery</label>
-                        </div>
-                </div>
-                <div class="my-5">
-                    <p class="lead font-weight-normal"> 5. You catch one of your people stealing. What do you do?</p>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q5" value="A" checked>
-                        <label class="form-check-label">Kill them! They deserve it.</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q5" value="B">
-                        <label class="form-check-label">Forgive them. They were just hungry</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q5" value="C">
-                        <label class="form-check-label">Punish them, then get them to use their skills on your behalf.</label>
-                    </div>
-                </div>
-                <div class="text-center my-5">
-                    <input type="submit" class="btn btn-light btn-lg">
-                </div>
-            </form>
+    <!-- Score -->
+    <div class="score py-5 bg-light text-center">
+        <div class="container lead">
+            <p>Your score is <span class="text-danger display-2 p-3">0%</span>out of 100</p>
         </div>
     </div>
 
-
+    <!-- Quiz -->
+    <div class="quiz py-4 bg-dark">
+        <div class="container">
+            <h2 class="my-5 text-white">On With the questions...</h2>
+            <form class="quiz-form text-light" id="quiz">
+                <!-- Question #1 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 1. The Night King was created using a dagger made of:</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label class="form-check-label">Blue Ice</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="B">
+                        <label class="form-check-label">Dragonglass</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="C">
+                        <label class="form-check-label">Valyrian Steel</label>
+                    </div>
+                </div>
+                <!-- Question #2 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 2. What is the name of Arya Stark's sword?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label class="form-check-label">Needle</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">Oathkeeper</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="C">
+                        <label class="form-check-label">Ice</label>
+                    </div>
+                </div>
+                 <!-- Question #3 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 3. How did Daenerys Targaryen eventually hatch her dragon eggs?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label class="form-check-label">In a firepit</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">In a funeral pyre</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="C">
+                        <label class="form-check-label">In a lightening storm</label>
+                    </div>
+                </div>
+                 <!-- Question #4 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 4. What does the word Khaleesi refer to?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label class="form-check-label">One of Daenerys Targaryen’s dragons</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="B">
+                        <label class="form-check-label">The name of Daenerys Targaryen’s advisor</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q4" value="C">
+                            <label class="form-check-label">One of Daenery Targaryen's titles</label>
+                        </div>
+                </div>
+                 <!-- Question #5 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 5. Besides dragonglass, what is the only other substance capable of defeating White Walkers?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="A" checked>
+                        <label class="form-check-label">Wildfire</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="B">
+                        <label class="form-check-label">Wierwood</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="C">
+                        <label class="form-check-label">Valyrian steel</label>
+                    </div>
+                </div>
+                 <!-- Question #6 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 6. Which Stark family direwolf was killed in retaliation for an attack on Prince Joffrey?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q6" value="A" checked>
+                        <label class="form-check-label">Summer</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q6" value="B">
+                        <label class="form-check-label">Lady</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q6" value="C">
+                        <label class="form-check-label">Nymeria</label>
+                    </div>
+                </div>
+                <!-- Question #7 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 7. Arya's punishment for stealing from the Many-Face God is:</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q7" value="A" checked>
+                        <label class="form-check-label">Death</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q7" value="B">
+                        <label class="form-check-label">Blindess</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q7" value="C">
+                        <label class="form-check-label">Memory Loss</label>
+                    </div>
+                </div>
+                <!-- Question #8 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 8. Dead creatures revived by White Walkers are known as:</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q8" value="A" checked>
+                        <label class="form-check-label">Walkers</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q8" value="B">
+                        <label class="form-check-label">Zombies</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q8" value="C">
+                        <label class="form-check-label">Wights</label>
+                    </div>
+                    <!-- Question #9 -->
+                    <div class="my-5">
+                        <p class="lead font-weight-normal"> 9. Tyrion Lannister murdered his father, Tywin, with…</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q9" value="A" checked>
+                            <label class="form-check-label">A crossbow</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q9" value="B">
+                            <label class="form-check-label">A dagger</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q9" value="C">
+                            <label class="form-check-label">Poisoned wine</label>
+                        </div>
+                    <!-- Question #9 -->
+                    <div class="my-5">
+                        <p class="lead font-weight-normal"> 10. Which character is the Three-Eyed Raven?:</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q10" value="A" checked>
+                            <label class="form-check-label">The High Sparrow</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q10" value="B">
+                            <label class="form-check-label">Bran Stark</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q10" value="C">
+                            <label class="form-check-label">Lord Varys</label>
+                        </div>    
+                    </div>
+                     <!-- Submit Button -->
+                    <div class="text-center my-5">
+                        <input type="submit" class="btn btn-light btn-lg">
+                    </div>
+            </form>
+        </div>
+    </div>
     <script src="./js/index.js"></script>
 </body>
 </html>
